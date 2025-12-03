@@ -1,2 +1,26 @@
-import { type RouteConfig, index } from "@react-router/dev/routes";
-export default [index("routes/home.tsx")] satisfies RouteConfig;
+import { type RouteConfig, index, route, layout } from "@react-router/dev/routes";
+export default [
+  index("routes/home.tsx"),
+  route("login", "routes/login.tsx"),
+  route("signup", "routes/signup.tsx"),
+  route("explore", "routes/explore.tsx"),
+  route("shorts", "routes/shorts.tsx"),
+  route("results", "routes/results.tsx"),
+  route("premium", "routes/premium.tsx"),
+  route("settings", "routes/settings.tsx"),
+  route("playlists", "routes/playlists.tsx"),
+  route("upload", "routes/upload.tsx"),
+  route("feed/history", "routes/feed.history.tsx"),
+  route("feed/history/manage", "routes/feed.history.manage.tsx"),
+  route("feed/library", "routes/feed.library.tsx"),
+  route("feed/subscriptions", "routes/feed.subscriptions.tsx"),
+  route("feed/trending", "routes/feed.trending.tsx"),
+  route("playlist/:playlistId", "routes/playlist.$playlistId.tsx"),
+  route("watch/:videoId", "routes/watch.$videoId.tsx"),
+  route("channel/:username", "routes/channel.$username.tsx"),
+  route("channel/:username/community", "routes/channel.$username.community.tsx"),
+  route("channel/customize", "routes/channel.customize.tsx"),
+  route("studio", "routes/studio.tsx"),
+  route("studio/analytics", "routes/studio.analytics.tsx"),
+  route("studio/edit/:videoId", "routes/studio.edit.$videoId.tsx"),
+] satisfies RouteConfig;

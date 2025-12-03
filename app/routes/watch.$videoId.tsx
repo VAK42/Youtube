@@ -1,4 +1,4 @@
-import { Link, useSubmit } from 'react-router';
+import { Link } from 'react-router';
 import { getVideoById, getVideos } from '../models/video.server';
 import { getCommentsForVideo } from '../models/comment.server';
 import { VideoCard } from '../components/VideoCard';

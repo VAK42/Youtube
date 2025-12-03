@@ -1,6 +1,6 @@
 import { getVideos } from '../models/video.server';
 import { VideoCard } from '../components/VideoCard';
-import { FixedSizeGrid as Grid } from 'reactWindow';
+import { FixedSizeGrid as Grid } from 'react-window';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import type { Route } from './+types/home';
 export function meta({ }: Route.MetaArgs) {
