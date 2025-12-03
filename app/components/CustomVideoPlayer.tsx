@@ -88,7 +88,6 @@ export function CustomVideoPlayer({ src, poster, autoPlay = false, onTheaterMode
       if (isPlaying) setShowControls(false);
     }, 3000);
   };
-  // Keyboard shortcuts
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (document.activeElement?.tagName === 'INPUT' || document.activeElement?.tagName === 'TEXTAREA') return;

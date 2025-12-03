@@ -1,5 +1,6 @@
 import { createCookieSessionStorage, redirect } from 'react-router';
-import { getUserById } from './models/user.server';
+import { getUserById, verifyLogin } from './models/user.server';
+export { verifyLogin };
 const sessionSecret = '91cb21720e03fd99b10eb90344c96285d7027079993b356a01200b3b6016031d0818f39f143abe632384a7595cca021ac4616d2e18e9e8ab352ae9205052b12d';
 export const storage = createCookieSessionStorage({
   cookie: {

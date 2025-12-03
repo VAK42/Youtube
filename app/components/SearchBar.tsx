@@ -2,14 +2,14 @@ import { useState, useEffect, useRef } from 'react';
 import { Search } from 'lucide-react';
 import { useNavigate } from 'react-router';
 const suggestions = [
-  'React tutorial',
-  'JavaScript basics',
-  'Python programming',
-  'Web development',
-  'Machine learning',
-  'CSS animations',
-  'TypeScript guide',
-  'Node.js tutorial',
+  'React Tutorial',
+  'JavaScript Basics',
+  'Python Programming',
+  'Web Development',
+  'Machine Learning',
+  'CSS Animations',
+  'TypeScript Guide',
+  'Node.js Tutorial',
 ];
 export function SearchBar() {
   const [query, setQuery] = useState('');
@@ -31,13 +31,13 @@ export function SearchBar() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (query.trim()) {
-      navigate(`/results?search_query=${encodeURIComponent(query)}`);
+      navigate(`/results?searchquery=${encodeURIComponent(query)}`);
       setShowSuggestions(false);
     }
   };
   const handleSuggestionClick = (suggestion: string) => {
     setQuery(suggestion);
-    navigate(`/results?search_query=${encodeURIComponent(suggestion)}`);
+    navigate(`/results?searchquery=${encodeURIComponent(suggestion)}`);
     setShowSuggestions(false);
   };
   return (

@@ -53,7 +53,7 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
         document.body
       )}
     </ToastContext.Provider>
-  );
+  )
 }
 export function useToast() {
   const context = useContext(ToastContext);

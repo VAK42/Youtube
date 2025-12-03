@@ -97,7 +97,7 @@ export function ThreadedComments({ videoId, initialComments }: ThreadedCommentsP
         </div>
       </div>
     </div>
-  );
+  )
   return (
     <div>
       {comments.map(comment => (

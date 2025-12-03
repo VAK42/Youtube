@@ -34,7 +34,7 @@ export function VideoCard({ video }: { video: any }) {
         </div>
       </div>
     </div>
-  );
+  )
 }
 function formatDuration(seconds: number): string {
   if (!seconds) return '0:00';
