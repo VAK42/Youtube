@@ -1,8 +1,8 @@
-# Youtube Clone
+# MyTube
 
 <img src="/img/Home.png"/>
 
-A Full-Stack Youtube Clone Built With Modern Web Technologies, Featuring Video Playback, User Authentication, Content Management, & A Rich Set Of Interactive Features.
+A Full-Stack MyTube Built With Modern Web Technologies, Featuring Video Playback, User Authentication, Content Management, & A Rich Set Of Interactive Features.
 
 ## Table Of Contents
 
@@ -32,7 +32,7 @@ A Full-Stack Youtube Clone Built With Modern Web Technologies, Featuring Video P
 
 ## Overview
 
-This Project Is A Comprehensive Youtube Clone That Replicates The Core Functionality Of The Popular Video Sharing Platform. Built With React Router V7, It Demonstrates Modern Web Development Practices Including Server-Side Rendering, Type-Safe Routing, & Efficient Database Management.
+This Project Is A Comprehensive MyTube Clone That Replicates The Core Functionality Of The Popular Video Sharing Platform. Built With React Router V7, It Demonstrates Modern Web Development Practices Including Server-Side Rendering, Type-Safe Routing, & Efficient Database Management.
 
 The Application Provides A Complete Video Sharing Experience With Features Like Video Upload, Playback, Comments, Likes, Subscriptions, Playlists, & A Creator Studio For Content Management. The Interface Is Fully Responsive & Optimized For Both Desktop & Mobile Devices.
 
@@ -44,7 +44,7 @@ The Application Provides A Complete Video Sharing Experience With Features Like 
 - **Search Functionality:** Advanced Search With Filters & Autocomplete
 - **Custom Video Player:** Feature-Rich Player With Playback Controls, Quality Selection, & Keyboard Shortcuts
 - **Theater Mode:** Immersive Viewing Experience With Expanded Player
-- **Shorts:** Vertical Video Format Similar To Youtube Shorts
+- **Shorts:** Vertical Video Format Similar To MyTube Shorts
 
 ### User Engagement
 - **Like & Dislike:** Express Opinions On Videos
@@ -142,7 +142,7 @@ npm run seed
 
 This Command Performs Two Operations:
 
-1. **Schema Initialization:** Creates The Database File At `app/db/youtube.db` & Applies The Schema Defined In `app/db/schema.sql`. This Creates All Necessary Tables Including Users, Videos, Comments, Likes, Subscriptions, Playlists, & More.
+1. **Schema Initialization:** Creates The Database File At `app/db/MyTube.db` & Applies The Schema Defined In `app/db/schema.sql`. This Creates All Necessary Tables Including Users, Videos, Comments, Likes, Subscriptions, Playlists, & More.
 
 2. **Data Seeding:** Populates The Database With Sample Data Including Demo Users, Videos, Comments, & Other Content. This Allows You To Explore The Application's Features Immediately.
 
@@ -160,7 +160,7 @@ npx tsx app/db/seed.ts
 To Start Fresh With A Clean Database:
 
 ```bash
-rm app/db/youtube.db
+rm app/db/MyTube.db
 npm run seed
 ```
 
@@ -195,7 +195,7 @@ The Production Build Is Optimized For Performance & Includes Minification, Tree-
 ## Project Structure
 
 ```
-youtube-clone/
+MyTube-clone/
 ├── app/
 │   ├── components/          # Reusable UI Components
 │   │   ├── ui/             # Base UI Components (Button, Input, Toast)
@@ -304,7 +304,7 @@ The Application Is Fully Responsive & Provides Optimal Viewing Experiences Acros
 
 ### Theme & Styling
 
-The Interface Uses A Dark Theme Inspired By Youtube's Design:
+The Interface Uses A Dark Theme Inspired By MyTube's Design:
 
 - **Color Scheme:** Dark Backgrounds With White Text For Reduced Eye Strain
 - **Typography:** Inter Font Family For Clean, Modern Text Rendering
@@ -575,7 +575,7 @@ For Production, Consider:
 
 **Database Errors:**
 - Ensure Database Is Initialized: Run `npm run seed`
-- Check File Permissions On `app/db/youtube.db`
+- Check File Permissions On `app/db/MyTube.db`
 - Verify Schema Is Up To Date
 
 **Build Failures:**
